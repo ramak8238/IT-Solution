@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Muddala IT solutionPage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    /* background-color: #f 4511e; */
+    color: #fff;
+    padding: 55px 32px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+  .service {
+  width: 100%;
+  /* whatever height you'd like */
+  height: 85vh;
+  object-fit: cover;
+}
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Muddala IT solutions</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+
+  <form>
+    <div class="input-group">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active service">
+                <img src="https://img.freepik.com/premium-photo/innovation-technology-business-finance-background_31965-2378.jpg?size=626&ext=jpg&ga=GA1.2.822673183.1670663175" alt="New York" width="1200" height="700">
+                <div class="carousel-caption">
+                  <h3>New York</h3>
+                  <p>The atmosphere in New York is lorem ipsum.</p>
+                </div>      
+              </div>
+        
+              <div class="item service">
+                <img src="https://img.freepik.com/free-photo/cloud-computing-banner-background-smart-city_53876-108504.jpg?size=626&ext=jpg&ga=GA1.2.822673183.1670663175" alt="New York" width="1200" height="700">
+                <div class="carousel-caption">
+                  <h3>Chicago</h3>
+                  <p>Thank you, Chicago - A night we won't forget.</p>
+                </div>      
+              </div>
+            
+              <div class="item service">
+                <img src="https://media.istockphoto.com/id/1199145131/photo/technical-support-concept-maintenance-sign-wrench-and-srewdriver-tools-tech-issues-fix-service.jpg?b=1&s=170667a&w=0&k=20&c=Cf5c88flyWs1jguBoNnEubmviFTmW8MbHPh7WYu0Fo0=" alt="New York" width="1200" height="700">
+                    <div class="carousel-caption">
+                  <h3>LA</h3>
+                  <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+                </div>      
+              </div>
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company Page</h2><br>
+      <h4>An IT services company provides brands with expert guidance and delivers solutions for their unique IT needs.
+
+        These specialized firms make it possible for business owners and employees to leverage systems, networks, applications and other devices to help specific operations run smoothly in their organizations.</h4>
+      <b>Software Programming:</b>
+        <p>
+        An IT support company assists businesses in building and implementing software and applications using current industry approaches.
+        
+        They have access to cutting-edge tools, resources and programs that help them gain a deeper understanding of your business needs, customer challenges and opportunities.
+        
+        They will identify which key features and functions make your product more efficient in reaching and engaging your consumers.<br>
+        
+        <b>Technical Support:</b>
+        Whether you’re looking for actionable tips or insights into new technological trends and developments, an IT services company can help steer you in the right direction and give your team the technical support they need to stay afloat.
+        
+        They can implement a strong communication system and provide subsequent support to give your brand a much-needed boost. Technical support can also be in a form of IT help desk services, for departmental knowledge or providing information on team’s metric and tools effectiveness 
+        
+        Technological support can connect to current infrastructures or it could be a result of a newly-integrated system set up by the company.
+        .</p>
+        <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong>Our mission is to develop our service to meet and exceed customer expectations. We contribute to the success of the University through the provision of timely, high quality and professional IT support. Our service underpins the University's strategic plan.</h4><br>
+      <p><strong>VISION:</strong> A vision statement is aspirational and expresses your brand’s plan or “vision” for the future and potential impact on the world. They often serve as a guide for a brand’s future goals and explain why customers and employees should stick around for the long-haul.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>POWER</h4>
+      <p>The Power of Service: Keeping Customers for Life is a comprehensive approach to customer service that ulitmately holds each individual responsible for his or her behavior.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>LOVE</h4>
+      <p>Thank you so much for helping out with my customers while I've been away. It's such a good feeling to know that we can take time out when needed and the team are here to not just support our customers but support each other too.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>JOB DONE</h4>
+      <p>Offering good customer service can improve customer satisfaction, improve your skills and help you advance your career.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>The services that benefit the sustainability of the planet and conserve natural resources can be termed as green services.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>A customer service certification gives employers confidence that whoever they hire has a higher-than-average ability to do the job.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>If you're working hard day after day to reach your dreams, these inspirational quotes about hard work might give you the motivation to keep going.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <h4>What we have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="data:image/jpeg;base64,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" alt="Paris" width="400" height="300">
+        <p><strong>Service</strong></p>
+        <p>Services should be clustered according to Lines of Service based on common business activities they support</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGrCvaSjF7KLP-V5P8zKfkoFlRkCwD3H4VkQ&usqp=CAU" alt="New York" width="400" height="300">
+        <p><strong>Pipeline</strong></p>
+        <p>Content pipeline is the structured indexing of all the information required to execute a highly effective content marketing strategy, to publish quality content at a high frequency.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPJrdAdqyqaPVYZyN0r8OUdbXbKKDcF31FKQ&usqp=CAU" alt="San Francisco" width="400" height="300">
+        <p><strong>Active Service</strong></p>
+        <p>Content services are a set of services and microservices, embodied either as an integrated product suite or as separate applications that share common APIs and repositories, to exploit diverse content types and to serve multiple constituencies and numerous use cases across an organization.</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Comment Box</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, FriendsAlot</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> London, Uk</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> abc@muddalaitsolutions.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-dark pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;height: 60vh;">
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+
+<script>
+$(document).ready(function(){
+    $('#myCarousel').carousel({
+  interval: 3000,
+  cycle: true
+});
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
